@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(158, 114, 199, 0.37)
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    grid-template-areas: 
+        "abc abc abc"
+        "d ef ef"
+        "ghi ghi ghi";
+}
+.hijo{
+    border: 50px;
+}
+.abc{
+    background-color: rgba(137, 43, 226, 0.274);
+    height: 400px;
+    grid-area: abc;
+    flex-wrap: nowrap;
+
+}
+.d{
+    background-color: transparent;
+    grid-area: d;
+}
+.ef{
+    background-color: blueviolet;
+    grid-area: ef;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.ghi{
+    background-color: rgba(158, 114, 199, 0.37);
+    grid-area: ghi;
+    height: 200px;
+}
+header{
+    height: 100px auto;
+}
+.icon{
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+h1{
+    color: rgba(29, 6, 51, 0.712);
+}
+nav{
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    top: 100px ;
+    right: 10px;
+    text-align: right;
+}
+.sublogo{
+    border-radius: 30%;
+}
+.logo{
+    border-radius: 30%;
+    width: 240px;
+}
+.listas{
+    background-color: rgba(137, 43, 226, 0.274);
+    padding: 0%;
+    text-decoration: none;
+    margin: 5px auto;
+}
+.listas li{
+    display: inline-block;
+    color: rgb(207, 172, 240);
+}
+.listas li a{
+    padding: 0 auto;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.listas li a:hover{
+    background-color: rgb(145, 93, 187);
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 25%;
+}
+main{
+    background-color: rgba(116, 45, 182, 0.658);
+    padding: 0% auto;
+    text-align: center;
+}
+main p{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
+.intro{
+    padding: 40px;
+    margin-left: 280px;
+}
+.p2{
+    display: flex;
+    width: 1000px;
+}
+main img{
+    width: 400px;
+    margin: 10px;
+}
+.about{
+    line-height: 1.5;
+}
+main h3{
+    margin: 3rem;
+    text-align: left;
+}
+.galeria{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer{
+    text-align: end;
+    padding: 10px;
+    margin-top: 2%;
+    bottom: auto;
+}
+.p4{
+    display: flex;
+    justify-content: center;
+}
+.p4 img{
+    display: flex;
+    justify-content: end;
+}
+.p3{   
+    display: flex;
+    justify-content: center;
+}
+.p3 p{
+    width: 0;
+    margin: 0;
+    text-align: center;
+}
+.nav1, .nav3, .nav4{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 1px;
+    right: 2px;
+}
+.carousel{
+    display: flex;
+    align-items: center;
+    text-align: end;
+    align-content: end;
+    width: 900px;
+}
